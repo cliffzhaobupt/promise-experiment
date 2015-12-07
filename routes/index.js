@@ -30,11 +30,13 @@ router.get('/friends', function(req, res) {
 });
 
 router.get('/hobbies', function(req, res) {
-  res.json([
-    'Music',
-    'Reading',
-    'Dating'
-  ]);
+  setTimeout(function(){
+    res.json([
+      'Music',
+      'Reading',
+      'Dating'
+    ]);
+  }, 1000);
 });
 
 router.get('/cities', function(req, res) {
@@ -42,7 +44,7 @@ router.get('/cities', function(req, res) {
     'Beijing',
     'New York',
     'Paris'
-  ])
+  ]);
 });
 
 module.exports = router;
